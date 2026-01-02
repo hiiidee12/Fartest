@@ -1,8 +1,15 @@
 {
-  "name": "Farcaster Mini App Test",
+  "accountAssociation": {
+    "header": "eyJmaWQiOjI5MTA0OSwidHlwZSI6ImF1dGgiLCJrZXkiOiIweDMyNjhkMEYyNjMxOTA3RTU2ZjQxYTJCM2M4NDZlMUNiODA0YWZiYzAifQ",
+    "payload": "eyJkb21haW4iOiJmYXJ0ZXN0LnZlcmNlbC5hcHAifQ",
+    "signature": "5/F2421+F8Tf9Xyu+TxfndeY5qzSXbkJbRKtTWkIkkNjLXbUfFRaIcOTYe2y/yL9oekZu3+whGgWom17iNuVmRs="
+  },
+
+  "name": "Bocchi Mini App",
   "description": "Mini app Farcaster sederhana buatan bocchi",
   "icon": "https://fartest.vercel.app/assets/bocchiy.jpg",
   "url": "https://fartest.vercel.app/",
+
   "permissions": [
     "context",
     "open_url",
