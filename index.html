@@ -1,55 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- TITLE -->
+  <title>BOCCHI – My Gallery</title>
+
+  <!-- BASIC SEO -->
+  <meta
+    name="description"
+    content="Bocchi photo collection – gallery of Hitori Gotoh from Bocchi the Rock!"
+  />
 
   <!-- OPEN GRAPH / LINK PREVIEW -->
-  <meta property="og:title" content="Farcaster Mini App" />
-  <meta property="og:description" content="Mini app Farcaster sederhana (Mini App SDK ready)." />
+  <meta property="og:title" content="BOCCHI – My Gallery" />
+  <meta property="og:description" content="Bocchi photo collection – gallery of Hitori Gotoh from Bocchi the Rock!" />
   <meta property="og:image" content="https://fartest.vercel.app/assets/bocchiy.jpg" />
   <meta property="og:url" content="https://fartest.vercel.app/" />
   <meta property="og:type" content="website" />
 
   <!-- TWITTER / X PREVIEW -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Farcaster Mini App" />
-  <meta name="twitter:description" content="Mini app Farcaster sederhana (Mini App SDK ready)." />
+  <meta name="twitter:title" content="BOCCHI – My Gallery" />
+  <meta name="twitter:description" content="Bocchi photo collection – gallery of Hitori Gotoh from Bocchi the Rock!" />
   <meta name="twitter:image" content="https://fartest.vercel.app/assets/bocchiy.jpg" />
 
-  <title>Farcaster Mini App</title>
-
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #0f172a;
-      color: white;
-      font-family: Arial, sans-serif;
-    }
-    .card {
-      background: #020617;
-      padding: 24px;
-      border-radius: 12px;
-      text-align: center;
-      width: 320px;
-    }
-  </style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div class="card">
-    <h2>Farcaster Mini App</h2>
-    <p>Mini App SDK siap digunakan ✅</p>
+  <!-- HEADER -->
+  <header>
+    <h1>🌸 MY GALLERY 🌸</h1>
+    <p>bocchi photo collection</p>
+  </header>
+
+  <!-- GALLERY -->
+  <main class="gallery" id="gallery"></main>
+
+  <!-- PAGINATION -->
+  <div class="pagination">
+    <button id="prev" aria-label="Previous page">⬅️</button>
+    <span id="page-indicator"></span>
+    <button id="next" aria-label="Next page">➡️</button>
   </div>
 
-  <!-- FARCASTER MINI APP SDK (WAJIB) -->
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <strong>Hitori Gotoh</strong>
+    <span>
+      Hitori Gotoh is a character from the anime <em>Bocchi the Rock!</em><br>
+      She is a shy and socially anxious high school girl<br>
+      who dreams of becoming a successful guitarist.<br>
+      Through music and friendship, she slowly learns to face the world.
+    </span>
+    <em>For fun & learning</em>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <img id="lightbox-img" alt="Preview image" />
+      <button class="farcaster-btn" id="farcasterBtn">
+        Post to Farcaster
+      </button>
+    </div>
+  </div>
+
+  <!-- SCRIPT GALLERY -->
+  <script src="script.js"></script>
+
+  <!-- FARCASTER MINI APP SDK -->
   <script type="module">
     import sdk from "https://esm.sh/@farcaster/miniapp-sdk";
 
-    // WAJIB dipanggil agar splash screen hilang
+    // WAJIB: agar splash screen Mini App hilang
     sdk.actions.ready();
+
+    // (opsional) expose sdk jika mau dipakai di script.js
+    window.farcasterSdk = sdk;
   </script>
 </body>
 </html>
