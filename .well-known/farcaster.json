@@ -1,0 +1,11 @@
+{
+  "name": "Farcaster Mini App Test",
+  "description": "Mini app Farcaster sederhana buatan bocchi",
+  "icon": "https://fartest.vercel.app/assets/bocchiy.jpg",
+  "url": "https://fartest.vercel.app/",
+  "permissions": [
+    "context",
+    "open_url",
+    "wallet"
+  ]
+}
