@@ -5,7 +5,7 @@
 
   <!-- OPEN GRAPH / LINK PREVIEW -->
   <meta property="og:title" content="Farcaster Mini App" />
-  <meta property="og:description" content="Mini app Farcaster sederhana, action-ready." />
+  <meta property="og:description" content="Mini app Farcaster sederhana (Mini App SDK ready)." />
   <meta property="og:image" content="https://fartest.vercel.app/assets/bocchiy.jpg" />
   <meta property="og:url" content="https://fartest.vercel.app/" />
   <meta property="og:type" content="website" />
@@ -13,14 +13,8 @@
   <!-- TWITTER / X PREVIEW -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Farcaster Mini App" />
-  <meta name="twitter:description" content="Mini app Farcaster sederhana, action-ready." />
+  <meta name="twitter:description" content="Mini app Farcaster sederhana (Mini App SDK ready)." />
   <meta name="twitter:image" content="https://fartest.vercel.app/assets/bocchiy.jpg" />
-
-  <!-- FARCASTER FRAME -->
-  <meta property="fc:frame" content="vNext" />
-  <meta property="fc:frame:image" content="https://fartest.vercel.app/assets/bocchiy.jpg" />
-  <meta property="fc:frame:button:1" content="Klik Aku 🚀" />
-  <meta property="fc:frame:post_url" content="https://fartest.vercel.app/.well-known/farcaster" />
 
   <title>Farcaster Mini App</title>
 
@@ -47,7 +41,15 @@
 <body>
   <div class="card">
     <h2>Farcaster Mini App</h2>
-    <p>Preview + Frame + Action Ready ✅</p>
+    <p>Mini App SDK siap digunakan ✅</p>
   </div>
+
+  <!-- FARCASTER MINI APP SDK (WAJIB) -->
+  <script type="module">
+    import sdk from "https://esm.sh/@farcaster/miniapp-sdk";
+
+    // WAJIB dipanggil agar splash screen hilang
+    sdk.actions.ready();
+  </script>
 </body>
 </html>
