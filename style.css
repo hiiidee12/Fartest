@@ -145,7 +145,7 @@ header p {
 }
 
 /* ======================================================
-   FOOTER BIO — FINAL (SESUAI CONTOH GAMBAR)
+   FOOTER BIO
    ====================================================== */
 .footer {
   max-width: 720px;
@@ -166,7 +166,7 @@ header p {
   box-shadow: 0 10px 30px rgba(0,0,0,0.12);
 }
 
-/* judul */
+/* */
 .footer strong {
   font-size: 1.15rem;
   font-weight: 600;
@@ -174,7 +174,7 @@ header p {
   color: rgba(255,255,255,0.95);
 }
 
-/* deskripsi utama */
+/* desk*/
 .footer p {
   font-size: 0.95rem;
   line-height: 1.65;
@@ -182,7 +182,7 @@ header p {
   color: rgba(255,255,255,0.9);
 }
 
-/* baris penutup */
+/*  */
 .footer span {
   display: block;
   margin-top: 0.6rem;
