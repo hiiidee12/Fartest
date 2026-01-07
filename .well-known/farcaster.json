@@ -6,7 +6,9 @@
   },
 
   "name": "Bocchi Mini App",
-  "description": "Mini app Farcaster sederhana buatan bocchi",
+  "splashImageUrl": "https://fartest.vercel.app/assets/bocchiy.jpg",
+  "splashBackgroundColor": "#0b0f17",
+  "description": "Mini APP",
   "icon": "https://fartest.vercel.app/assets/bocchiy.jpg",
   "url": "https://fartest.vercel.app/",
 
